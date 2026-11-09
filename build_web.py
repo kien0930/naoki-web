@@ -14,6 +14,7 @@ rep('lúc này Naoki không tra mạng được (chỉ tra được khi trang m�
     'Naoki không tra mạng được. Nếu được nhờ tra thì nói là không tra được, đừng đoán thông tin mới.')
 rep('  upstream_error:"Mất kết nối giữa chừng. Bấm Gửi lại để thử tiếp.",\n};',
     '  upstream_error:"Mất kết nối giữa chừng. Bấm Gửi lại để thử tiếp.",\n  not_configured:"Trang chưa được cắm chìa khóa Claude nên Naoki chưa nói chuyện được. Chủ trang đang sửa nha.",\n  daily_limit:"Hôm nay Naoki nói chuyện nhiều quá rồi, mai quay lại nha.",\n  bad_request:"Tin nhắn này Naoki không đọc được. Thử viết ngắn hơn nha.",\n};')
+rep('      <p class="tagline">Lính ngự lâm tập sự · chạy trên Claude</p>\n', '')
 # fingerprint the server checks: the start of RULES (before any ${...})
 r0=src.index('const RULES = `')+len('const RULES = `')
 raw=src[r0:r0+400]
