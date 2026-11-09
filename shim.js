@@ -32,6 +32,7 @@
       if (e && e.name === "AbortError") throw { code: "cancelled", message: "cancelled", text: full || undefined };
       throw { code: "upstream_error", message: "stream", text: full || undefined };
     }
+    if (!full.trim()) throw { code: /refusal/.test(stop) ? "refused" : "empty_completion", message: stop };
     return { text: full, truncated: stop === "max_tokens" };
   }
   sample.limits = async function(){ return { tools: false, images: false }; };

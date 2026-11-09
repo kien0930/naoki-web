@@ -9,7 +9,7 @@ def rep(a,b, n=1):
 a=src.index('const ABOUT_OWNER = `'); b=src.index('`;',a)
 src=src[:a]+'const ABOUT_OWNER = ``;'+src[b+2:]
 rep('Mỗi tin nhắn dùng lượt Claude của người đang chat. Lần gửi đầu tiên sẽ hỏi bạn cho phép.',
-    'Naoki trả lời bằng Claude của Anthropic. Đừng gửi thông tin riêng tư nha.')
+    'Naoki trả lời bằng AI. Đừng gửi thông tin riêng tư vào đây nha.')
 rep('lúc này Naoki không tra mạng được (chỉ tra được khi trang mở trong app Claude trên máy tính). Nếu được nhờ tra thì nói vậy, đừng đoán thông tin mới.',
     'Naoki không tra mạng được. Nếu được nhờ tra thì nói là không tra được, đừng đoán thông tin mới.')
 rep('  upstream_error:"Mất kết nối giữa chừng. Bấm Gửi lại để thử tiếp.",\n};',
