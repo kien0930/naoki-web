@@ -1,0 +1,28 @@
+{
+ "Version": 3,
+ "FileReferences": {
+  "Moc": "Tet.moc3",
+  "Textures": [
+   "texture_00.png"
+  ],
+  "Physics": "Tet.physics3.json",
+  "DisplayInfo": "Tet.cdi3.json"
+ },
+ "Groups": [
+  {
+   "Target": "Parameter",
+   "Name": "LipSync",
+   "Ids": [
+    "ParamMouthOpenY"
+   ]
+  },
+  {
+   "Target": "Parameter",
+   "Name": "EyeBlink",
+   "Ids": [
+    "ParamEyeLOpen",
+    "ParamEyeROpen"
+   ]
+  }
+ ]
+}
